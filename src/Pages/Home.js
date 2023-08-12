@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import Button from "../utils/button/Button";
 import banner from "../assets/Image/pexels_videos_2516159 (1080p).mp4";
 import HighlightText from "../Components/HighlightText";
+import CodeBlocks from "../Components/codeblocks/CodeBlocks";
+import LearningLanguageSection from "../Components/LearningLanguageSection";
+import TimelineSection from "../Components/TimelineSection";
 
 const Home = () => {
   return (
@@ -32,7 +35,7 @@ const Home = () => {
           hands on project ,quizzes,and personalized feedback from Instructor
         </div>
         <div className="container4">
-          <Button active={true} >Learn more</Button>
+          <Button active={true}>Learn more</Button>
 
           <Button>Book a demo</Button>
         </div>
@@ -43,9 +46,123 @@ const Home = () => {
           </video>
         </div>
         {/* code section 1 */}
+
+        <div>
+          <CodeBlocks
+            flexDirection={"row"}
+            // position={"relative"}
+            heading={
+              <div style={{ color: "#ffffff", fontSize: "x-large" }}>
+                Unlock your <HighlightText text={"Coding Potential "} />
+                with our online Course
+              </div>
+            }
+            subHeading={
+              "Our course is designed and taught by industry experts who have years of experience in their field"
+            }
+            ctbt1={{
+              btntxt: "Try it yourself",
+              active: true,
+              linkto: "/login",
+            }}
+            ctbt2={{
+              btntxt: "learn more",
+              active: false,
+              // linkto: "/signup",
+            }}
+            CodeBlocks={`
+            <!DOCTYPE html>\n
+                <html>\n
+                <body>\n
+           <h1>My First programing language</h1>\n
+            <p>My first paragraph here </p>\n
+             </body>\n
+              `}
+            codeColor={"yellow"}
+          />
+        </div>
+
+        <div>
+          <CodeBlocks
+            flexDirection={"row-reverse"}
+            // position={"relative"}
+            heading={
+              <div style={{ color: "#ffffff", fontSize: "x-large" }}>
+                Start <HighlightText text={"Coding in second "} />
+              </div>
+            }
+            subHeading={
+              "Our course is designed and taught by industry experts who have years of experience in their field"
+            }
+            ctbt1={{
+              btntxt: "Continue Lesson",
+              active: true,
+              linkto: "/login",
+            }}
+            ctbt2={{
+              btntxt: "learn more",
+              active: false,
+              // linkto: "/signup",
+            }}
+            CodeBlocks={`
+            <!DOCTYPE html>\n
+                <html>\n
+                <body>\n
+           <h1>My First programing language</h1>\n
+             </body>\n
+              `}
+            codeColor={"yellow"}
+          />
+        </div>
       </div>
 
       {/* section 2 */}
+
+      <div className="section2">
+        <div className="homepage-bg">
+          <div className="homepage-interior">
+            <Button active={true} linkto={"/signup"}>
+              <div style={{ display: "flex", gap: 4, alignItems: "center" }}>
+                Explore Full catalog
+                <AiOutlineArrowRight />
+              </div>
+            </Button>
+
+            <Button active={false} linkto={"/signup"}>
+              <div>Learn More</div>
+            </Button>
+          </div>
+        </div>
+
+        <div className="homepage2">
+          <div className="homepage2-interiorleft">
+            <div
+              style={{
+                color: "black",
+                fontSize: "x-large",
+                margin: "auto",
+              }}
+            >
+              Get the Skills you need for a{" "}
+              <HighlightText text={"job that is in demand "} />
+            </div>
+          </div>
+          <div className="homepage2-interiorright">
+            <div style={{ fontSize: "small" }}>
+              The modern StudyNotion is the dictates its own terms.Today to be a
+              Competitive specilist require more than professioanl Skills
+            </div>
+            <div style={{ display: "flex", justifyContent: "flex-start" }}>
+              <Button active={true} linkto={"/signup"}>
+                <div>Learn More</div>
+              </Button>
+            </div>
+          </div>
+          <TimelineSection/>
+          <LearningLanguageSection/>
+        </div>
+      </div>
+
       {/* section 3 */}
       {/* Footer */}
     </div>

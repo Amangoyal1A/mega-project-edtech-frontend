@@ -4,7 +4,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { TypeAnimation } from "react-type-animation";
 
 const CodeBlocks = ({
-  // position,
+  position,
   heading,
   subHeading,
   ctbt1,
@@ -18,34 +18,42 @@ const CodeBlocks = ({
     <div
       style={{
         display: "flex",
-        // position: position,
         marginBottom: "20px",
         justifyContent: "space-between",
-        gap: "10px",
+        gap: "50px",
         flexDirection: flexDirection,
-
+        position: position,
       }}
     >
+      {/* section1 */}
       <div
         style={{
           display: "flex",
           flexDirection: "column",
-          gap: "40px",
-          justifyContent:"start",
-           border: "1px solid black",
+          gap: "30px",
+          justifyContent: "start",
+          // border: "1px solid black",
           padding: "4px",
-          height:"200px"
-         
-          // justifyContent:"center"
+          height: "200px",
+          textAlign: "center",
+          width: "50%",
+          height: "auto",
         }}
       >
-        <div > {heading}</div>
-        <div>{subHeading}</div>
+        {heading}
+        <div
+          style={{
+            fontSize: "medium",
+            color: "#ffffff",
+          }}
+        >
+          {subHeading}
+        </div>
         <div
           style={{
             marginTop: "7px",
             display: "flex",
-            gap: "5px",
+            gap: "20px",
             justifyContent: "center",
           }}
         >
@@ -61,25 +69,25 @@ const CodeBlocks = ({
         </div>
       </div>
       {/* section 2 */}
-      <div style={{display:"flex"}}> 
-  
- 
+      <div style={{ display: "flex", width: "40%" }}>
+        <div></div>
         <div
           style={{
             width: "90%",
             display: "flex",
             flexDirection: "column",
             gap: "2px",
-            color: "black",
-            font:"12px",
-            fontFamily:"monospace" 
+            color: codeColor,
+            fontSize: "12px",
+            fontFamily: "monospace",
           }}
         >
-          <TypeAnimation sequence={[CodeBlocks, 2000, ""]}
-          repeat={Infinity}
-          cursor={true}
-          style={{whiteSpace:"pre-line",display:"block"}}
-          omitDeletionAnimation={true}
+          <TypeAnimation
+            sequence={[CodeBlocks, 2000, ""]}
+            repeat={Infinity}
+            cursor={true}
+            style={{ whiteSpace: "pre-line", display: "block" }}
+            omitDeletionAnimation={true}
           />
         </div>
       </div>

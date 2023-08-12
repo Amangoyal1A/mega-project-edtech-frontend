@@ -48,3 +48,51 @@
   height: 600px;
   width: auto;
 }
+
+.section2 {
+  background-color: rgb(228, 221, 221);
+  color: #000000;
+}
+
+.homepage-bg {
+  height: 333px;
+  /* background: url("../assets/Image/vector-diagonal-lines-pattern-seamless-striped-background-simple-endless-black-white-texture_547648-3654.avif"); */
+  background-color: floralwhite;
+
+  /* opacity: 0.1; */
+}
+.homepage-interior {
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  height: 45vh; /* Set the height to the full viewport height */
+  gap: 20px;
+}
+
+.homepage-interior-btn {
+  display: flex;
+  /* flex-direction: row; */
+
+  color: #ffffff;
+}
+.homepage2 {
+  display: flex;
+  gap: 30px;
+  background-color: floralwhite;
+  justify-content: space-evenly;
+}
+
+.homepage2-interiorleft {
+  display: flex;
+  flex-direction: column;
+  /* justify-items: center; */
+  width: 40%;
+}
+
+.homepage2-interiorright {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  gap: 30px;
+  width: 45%;
+}

@@ -15,23 +15,23 @@ const TimelineTableSection = ({ heading, imgsrc, para }) => {
   };
 
   const iconStyles = {
-    width: "60px",
-    height: "60px",
+    width: "30px",
+    height: "30px",
   };
 
   const contentStyles = {
     display: "flex",
     flexDirection: "column",
-    gap:"15px"
+    gap: "15px",
   };
 
   const headingStyles = {
-   fontSize:"large"
+    fontSize: "large",
   };
 
   const paragraphStyles = {
-    width:"100%",
-    fontSize: "small"
+    width: "100%",
+    fontSize: "small",
   };
 
   return (

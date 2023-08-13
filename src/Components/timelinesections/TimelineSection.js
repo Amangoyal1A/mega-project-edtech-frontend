@@ -1,11 +1,10 @@
 import React from "react";
-import flexibity from "../../assets/Logo/flexiblity.jpg";
-import leadership from "../../assets/Logo/leadership.jpg";
-import solveproblem from "../../assets/Logo/solveproblem.jpg";
-import responsibility from "../../assets/Logo/responsibility.jpg";
+import logo1 from "../../assets/TimeLineLogo/Logo1.svg"
+import logo2 from "../../assets/TimeLineLogo/Logo2.svg"
+import logo3 from "../../assets/TimeLineLogo/Logo3.svg"
+import logo4 from "../../assets/TimeLineLogo/Logo4.svg"
 import TimelineTableSection from "./TimelineTableSection";
-import image from "../../assets/Image/woman-programmer-software-web-development-computer-girl-work-script-coding-programming_352905-203.avif";
-
+import image from "../../assets/Images/TimelineImage.png"
 const TimelineSection = () => {
   const imageContainerStyles = {
     display: "flex",
@@ -30,7 +29,8 @@ const TimelineSection = () => {
     height: "50px",
     gap: "30px",
     top: "350px",
-     justifyContent:"space-evenly"
+     justifyContent:"space-evenly",
+     opacity:"0.9"
   };
 
   return (
@@ -51,23 +51,23 @@ const TimelineSection = () => {
       >
         <TimelineTableSection
           heading="Leadership"
-          imgsrc={leadership}
+          imgsrc={logo1}
           para="Fully committed to the success company"
         />
         <TimelineTableSection
           heading="Responsibility"
-          imgsrc={responsibility}
+          imgsrc={logo2}
           para="Students be always be our top proirities"
         />
         <TimelineTableSection
           heading="Flexibilty"
-          imgsrc={flexibity}
+          imgsrc={logo3}
           para="the ability to switch is an important skill"
         />
 
         <TimelineTableSection
           heading="Solve the problem"
-          imgsrc={solveproblem}
+          imgsrc={logo4}
           para="Code your way to a solutions better way"
         />
       </div>

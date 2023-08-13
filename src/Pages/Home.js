@@ -3,7 +3,7 @@ import "./Home.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Button from "../utils/button/Button";
-import banner from "../assets/Image/pexels_videos_2516159 (1080p).mp4";
+import banner from "../assets/Images/banner.mp4";
 import HighlightText from "../Components/HighlightText";
 import CodeBlocks from "../Components/codeblocks/CodeBlocks";
 import LearningLanguageSection from "../Components/LearningLanguageSection";
@@ -146,8 +146,6 @@ const Home = () => {
               Get the Skills you need for a{" "}
               <HighlightText text={"job that is in demand "} />
             </div>
-
-         
           </div>
           <div className="homepage2-interiorright">
             <div style={{ fontSize: "small" }}>
@@ -159,11 +157,9 @@ const Home = () => {
                 <div>Learn More</div>
               </Button>
             </div>
-           
           </div>
-        
         </div>
-        <TimelineSection/>
+        <TimelineSection />
         <LearningLanguageSection />
       </div>
 

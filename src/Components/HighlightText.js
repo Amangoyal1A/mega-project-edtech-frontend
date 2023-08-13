@@ -5,11 +5,12 @@ const HighlightText = ({ text }) => {
     <span
       style={{
         fontSize: "xxLarge",
-        color: "#0066b2",
+        color: "#1FA2FF",
         fontWeight: "80px",
+        margin:"0 5px"
       }}
     >
-      {text}
+       {text}
     </span>
   );
 };

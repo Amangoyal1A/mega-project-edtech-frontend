@@ -1,0 +1,123 @@
+.footerMain {
+  background-color: #363648;
+  color: white;
+}
+
+.footerMainContent {
+  padding: 30px 10px 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.footerZoopText {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.footerZoopTextMain {
+  margin-top: 15px;
+  display: flex;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  width: 300px;
+}
+
+.footerDetailHeading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.footerLink {
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #f7f8fd;
+}
+.linkDiv {
+  margin-bottom: 7px;
+}
+.footerLink:hover {
+  text-decoration: none;
+  color: white;
+}
+.partialBorder {
+  height: 5px;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.partialBorder:after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.footerDetailsContainer {
+  display: flex;
+}
+
+.footerDetailContent {
+  margin-bottom: 35px;
+  padding: 0px 35px;
+  margin-left: 24px;
+}
+
+.footerCompanyContent {
+  border-top: 1px solid #8c95bb;
+  color: #8c95bb;
+  padding: 30px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerFeatureName {
+  font-weight: 400;
+  color: #8c95bb;
+  margin-left: 100px;
+}
+.footerCompanyName {
+  font-weight: 400;
+}
+
+.footerFeatureName:hover {
+  color: #8c95bb;
+}
+
+.footerDefinedWidth {
+  width: 300px;
+}
+
+@media (max-width: 767px) {
+  .footerDetailsContainer {
+    flex-wrap: wrap;
+  }
+  .footerDetailContent {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .footerMainContent {
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+  .footerFeatureContainer {
+    margin-top: 15px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footerCompanyContent {
+    justify-content: center;
+    padding: 20px 0px;
+  }
+  .footerFeatureName {
+    margin: 0px 25px;
+    margin-bottom: 16px;
+  }
+}

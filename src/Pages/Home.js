@@ -8,6 +8,9 @@ import HighlightText from "../Components/HighlightText";
 import CodeBlocks from "../Components/codeblocks/CodeBlocks";
 import LearningLanguageSection from "../Components/LearningLanguageSection";
 import TimelineSection from "../Components/timelinesections/TimelineSection";
+import instructor from "../assets/Images/Instructor.png";
+// import Footer from "../Components/common/Footer";
+import ExploreMore from "../Components/ExploreMore";
 
 const Home = () => {
   return (
@@ -114,6 +117,7 @@ const Home = () => {
             codeColor={"yellow"}
           />
         </div>
+        <ExploreMore/>
       </div>
 
       {/* section 2 */}
@@ -141,10 +145,11 @@ const Home = () => {
                 color: "black",
                 fontSize: "x-large",
                 margin: "auto",
+                fontWeight: "bold",
               }}
             >
               Get the Skills you need for a{" "}
-              <HighlightText text={"job that is in demand "} />
+              <HighlightText text={"Job that is in demand "} />
             </div>
           </div>
           <div className="homepage2-interiorright">
@@ -164,6 +169,39 @@ const Home = () => {
       </div>
 
       {/* section 3 */}
+
+      <div className="section3">
+        <div className="sec3Instructor">
+          <img src={instructor} alt="Instructor" />
+          <div className="section3Instructorpart2">
+            <div
+              style={{
+                color: "#ffff",
+                fontSize: "x-large",
+                fontWeight: "bold",
+              }}
+            >
+              Become an <HighlightText text={"Instructor"} />
+            </div>
+            <div>
+              <p style={{ color: "#ffff" }}>
+                Instructors from around the world teach millions of students on
+                StudyNotion. We provide the tools and skills to teach what you
+                love.
+              </p>
+            </div>
+            <div style={{ display: "flex", flexDirection: "flex-start" }}>
+              <Button active={true} linkto={"/login"}>
+                Start Teaching Today
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        <div className="sec3Review">Review from other learner </div>
+        {/* <Footer/> */}
+      </div>
+
       {/* Footer */}
     </div>
   );

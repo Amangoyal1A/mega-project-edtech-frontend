@@ -47,6 +47,7 @@ const LearningLanguageSection = () => {
           alignItems: "center",
           justifyContent: "center",
           margin: "5px",
+          flexWrap:"wrap"
         }}
       >
         <img

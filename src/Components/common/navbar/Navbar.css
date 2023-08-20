@@ -1,0 +1,31 @@
+.main {
+  background-color: black;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
+}
+
+.logo {
+  align-items: center;
+  margin-top: 25px;
+  display: flex;
+  
+}
+.navbar-main {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-main a {
+  text-decoration: none; 
+}
+
+.loginsignupbtnmain{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}

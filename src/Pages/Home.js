@@ -18,8 +18,8 @@ const Home = () => {
       {/* section 1 */}
 
       <div className="mainbox">
-        <div>
-          <Link to={"/signup"}>
+        <div style={{paddingTop:"20px"}}>
+          <Link to={"/signup"} style={{ textDecoration: 'none' }}>
             <div className="container1">
               <div>Become an Instructor</div>
               <div style={{ marginTop: "3px", marginLeft: "2px" }}>

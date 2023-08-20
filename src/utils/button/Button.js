@@ -8,7 +8,6 @@ const Button = ({ children, active, linkto }) => {
     padding: "10px 20px",
     borderRadius: "5px",
     textDecoration: "none",
-    // fontWeight: 'bold',
     fontSize: "16px",
   };
 

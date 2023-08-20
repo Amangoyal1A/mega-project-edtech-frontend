@@ -20,7 +20,7 @@ const CodeBlocks = ({
         display: "flex",
         marginBottom: "20px",
         justifyContent: "space-between",
-        gap: "50px",
+        gap: "200px",
         flexDirection: flexDirection,
         position: position,
       }}
@@ -36,7 +36,7 @@ const CodeBlocks = ({
           padding: "4px",
           height: "200px",
           textAlign: "center",
-          width: "50%",
+          width: "500px",
           height: "auto",
         }}
       >
@@ -70,10 +70,10 @@ const CodeBlocks = ({
       </div>
       {/* section 2 */}
       <div style={{ display: "flex", width: "40%" }}>
-        <div></div>
+        {/* <div></div> */}
         <div
           style={{
-            width: "90%",
+            width: "300px",
             display: "flex",
             flexDirection: "column",
             gap: "2px",

@@ -10,9 +10,8 @@
 
 .logo {
   align-items: center;
-  margin-top: 25px;
+  margin-top: 10px;
   display: flex;
-  
 }
 .navbar-main {
   display: flex;
@@ -21,11 +20,69 @@
   align-items: center;
 }
 .navbar-main a {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
-.loginsignupbtnmain{
-    display: flex;
-    gap: 5px;
-    align-items: center;
+.loginsignupbtnmain {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.dashboardnavs {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.Button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Button:hover {
+  background-color: #2980b9;
+}
+.container {
+  display: flex;
+  cursor: pointer;
+  color: azure;
+ 
+  position: relative; /* To make sure the dropdown content is positioned correctly */
+}
+
+.container:hover {
+  color: white; /* Change color on hover */
+}
+
+.hovered .dropdown-content {
+  display: block; /* Show dropdown content when parent is hovered */
+}
+
+.dropdown-content {
+  display: none; /* Initially hide dropdown content */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.dropdown-content a{
+  text-decoration: none;
+  color: #000;
+}
+.dropdown-content a:hover{
+  color: blue;
+  text-shadow: 1px 1px 2px rgba(177, 156, 156, 0.3),
+                 -1px -1px 2px rgba(13, 0, 255, 0.3);
 }

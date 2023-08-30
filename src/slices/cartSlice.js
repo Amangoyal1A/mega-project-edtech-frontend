@@ -12,7 +12,7 @@ export const cartSlice = createSlice({
   initialState,
   reducers: {
     setTotalItems: (state, value) => {
-      state.token = value.payload;
+      state.totalItems = value.payload;
     },
     //add to cart 
     //remove from cart 
